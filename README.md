@@ -1,4 +1,4 @@
-** Working interactively with Glasgow Haskell Compiler (GHC) **
+**Working interactively with Glasgow Haskell Compiler (GHC)**
 
 Start GHC's interactive mode
 
