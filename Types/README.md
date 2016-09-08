@@ -66,4 +66,30 @@ ghci> :t "Hello World!"
 ```
 
 The above output can be read as: The string "Hello World!" has a type of *a list of Char*'s. The square brackets ([]) denotes a list.
+It is worth noticing that each element in the list has an idential type: *Char*
 
+```haskell
+ghci> :t ("Hi", 'h')
+("Hi", 'h') :: ([Char], Char)
+ghci> :t ("Hi", 'h', False)
+("Hi", 'h', False) :: ([Char], Char, Bool
+ghci> :t ("Hi", "Hello", "How", "Are")
+("Hi", "Hello", "How", "Are") :: ([Char], [Char], [Char], [Char])
+```
+
+The above outputs can be read as
+
+* The first element of the tuple has type of *a list of Chars*, the second element has type of *Char*
+* The first element of the tuple has type of *a list of Chars*, the second element has type of *Char*, the third element has type of *Bool*
+* All the elements of the tuples has types of *a list of Chars*
+
+It is worth noticing that each element in a tuple can have a type different from the other elements in the tuple.
+
+
+```haskell
+ghci> :t (10 20 30)
+(10 20 30) :: (Num (t -> t1 -> t2), Num t1, Num t) => t2
+
+ghci> :t ("Hi", 10, 'h')
+("Hi", 10, 'h') :: Num t => ([Char], t, Char)
+```
