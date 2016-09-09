@@ -15,5 +15,5 @@ Prelude> :set prompt "ghci> "
 ghci>
 ```
 
-To avoid doing this every time GHCi is run, save the command *:set prompt "ghci> " in a file called .ghci in the home directory.
+To avoid doing this every time GHCi is run, save the command *:set prompt "ghci> "* in a file called .ghci in the home directory.
 
